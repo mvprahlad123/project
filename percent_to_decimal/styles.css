@@ -1,0 +1,13 @@
+.ntable td {
+    width: 120px;
+}
+
+.calc2 button {
+    margin: 20px auto;
+    padding: 7px;
+}
+
+#area {
+    width: 220px;
+    font-size: x-large;
+}

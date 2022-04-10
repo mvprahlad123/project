@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Grams to Kilograms converter</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="app.js" defer></script>
+
+</head>
+
+<body>
+
+    <h1>Grams to Kilograms conversion</h1>
+    <form name="calcform" autocomplete="off">
+        <table class="calc2">
+            <tr>
+                <td><label for="x">Grams:</label></td>
+                <td><input type="number" min="0" step="any" id="x" name="x" class="intext" autofocus tabindex="1"></td>
+                <td class="mathsymbol">g</td>
+            </tr>
+            <tr>
+                <td>&nbsp;</td>
+                <td>
+                    <button type="button" title="Convert" class="btn" tabindex="2" onclick="convert()"> Convert</button>
+                    <button type="reset" title="Reset" class="btn" tabindex="3">Reset</button>
+                </td>
+                <td>&nbsp;</td>
+            </tr>
+            <tr>
+                <td><label for="x">Kilograms</label>:</td>
+                <td><input type="text" name="y" id="outtext" readonly tabindex="4"></td>
+                <td class="mathsymbol">kg</td>
+            </tr>
+            <tr>
+                <td><label for="x">Kilograms</label>+Grams:</td>
+
+                <td>
+                    <table id="tbl1">
+                        <tr>
+                            <td><input type="text" name="y2" id="y2" class="outtext" readonly tabindex="4">
+                            </td>
+                            <td class="mathsymbol">kg</td>
+                            <td><input type="text" name="y3" id="y3" class="outtext" readonly tabindex="5">
+                            </td>
+                        </tr>
+                    </table>
+                </td>
+                <td class="mathsymbol">g</td>
+            </tr>
+            <tr id="pf1">
+                <td>Calculation:</td>
+                <td><textarea name="TA" rows="3" class="outtext" readonly></textarea></td>
+                <td>&nbsp;</td>
+            </tr>
+        </table>
+    </form>
+    <a href="../index.html">Home</a>
+</body>
+
+</html>

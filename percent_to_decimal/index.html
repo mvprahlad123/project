@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Percent to decimal conversion</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+    <h1>Percent to decimal conversion</h1>
+    <form name="calcform" autocomplete="off">
+        <table class="calc2">
+            <tbody>
+                <tr>
+                    <td><label for="x">Enter percent:</label></td>
+                    <td class="math"><input type="number" step="any" id="x" name="x" class="intext" autofocus
+                            tabindex="1"></td>
+                    <td class="mathsymbol">%</td>
+                </tr>
+                <tr>
+                    <td>&nbsp;</td>
+                    <td>
+                        <button type="button" title="Convert" class="btn" tabindex="2" onclick="convert()">
+                            Convert</button>
+                        <button type="reset" title="Reset" class="btn" tabindex="3"> Reset</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Decimal result:</td>
+                    <td class="math"><input type="text" name="y" class="outtext" readonly tabindex="4"></td>
+                </tr>
+                <tr>
+                    <td>Calculation:</td>
+                    <td><textarea rows="3" id="area" name="area" tabindex="5" class="outtext" readonly></textarea></td>
+                </tr>
+            </tbody>
+        </table>
+    </form>
+    <a href="../index.html">Home</a>
+
+
+</body>
+
+<script src="app.js"></script>
+
+</html>

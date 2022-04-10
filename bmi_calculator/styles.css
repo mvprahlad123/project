@@ -1,0 +1,19 @@
+#wrapper td {
+    padding: .75rem;
+}
+
+#calcform {
+    padding: 15px;
+    border-radius: 7px;
+    max-width: 500px;
+}
+
+#cmdiv,
+#kgdiv {
+    display: none;
+}
+
+.btn span {
+    font-weight: bold;
+    font-size: large;
+}

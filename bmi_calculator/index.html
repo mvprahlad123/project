@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#ffffff">
+    <meta name="format-detection" content="telephone=no">
+    <link rel="stylesheet" href="styles.css">
+    <script src="app.js" defer></script>
+    <title>BMI Calculator</title>
+</head>
+
+<body>
+
+
+    <h1>BMI Calculator</h1>
+    <form id="calcform" autocomplete="off">
+        <div>
+            <label>Units Type</label>
+            <div data-toggle="buttons">
+                <button type="button" id="impbtn" onclick="onUnitImp()">Imperial Units</button>
+                <button type="button" id="metricbtn" onclick="onUnitMetric()">Metric Units</button>
+            </div>
+        </div>
+        <div>
+            <label>Height</label>
+            <div id="ftdiv">
+                <input type="number" min="0" id="ft" name="ft" placeholder="feet">
+                <div>
+                    <span>ft</span>
+                </div>
+                <input type="number" min="0" id="in" name="in" placeholder="inches">
+                <div>
+                    <span>in</span>
+                </div>
+            </div>
+            <div id="cmdiv">
+                <input type="number" min="0" id="cm" name="cm" placeholder="centimeters">
+                <div>
+                    <span>cm</span>
+                </div>
+            </div>
+        </div>
+        <div>
+            <label>Weight</label>
+            <div id="lbdiv">
+                <input type="number" min="0" id="lb" name="lb" placeholder="pounds">
+                <div>
+                    <span>lb</span>
+                </div>
+            </div>
+            <div id="kgdiv">
+                <input type="number" min="0" id="kg" name="kg" placeholder="kilograms">
+                <div>
+                    <span>kg</span>
+                </div>
+            </div>
+        </div>
+        <div>
+            <button type="button" title="Calculate" onclick="OnCalc()">Calculate</button>
+            <button type="reset" title="Reset">Reset</button>
+        </div>
+        <div>
+            <label for="bmi">BMI</label>
+            <div>
+                <input type="number" min="0" id="bmi" readonly>
+
+            </div>
+        </div>
+        <div>
+            <label for="risk">BMI category</label>
+            <input type="text" id="category" readonly>
+        </div>
+        <div>
+            <label for="risk">Health risk</label>
+            <input type="text" id="risk" readonly>
+        </div>
+    </form>
+    <br>
+    <a href="../index.html">Home</a>
+
+
+
+</body>
+
+</html>

@@ -1,0 +1,62 @@
+:root {
+    font-family: sans-serif;
+}
+
+.calc2 textarea {
+    width: 220px;
+    font-size: large;
+}
+
+@media all and (max-width: 576px) {
+    .calc2 {
+        width: 100%;
+    }
+
+    .calc2 input[type=text],
+    .calc2 input[type=number] {
+        width: 100%;
+        padding: 5px;
+    }
+
+    .calc2 textarea {
+        width: 100%;
+    }
+
+    .calc2 tr td:nth-child(2) {
+        width: 240px;
+        width: calc(100% - 35px);
+    }
+
+    .calc2 tr td:nth-child(3) {
+        padding-top: 20px;
+    }
+
+    #tbl1 td {
+        float: none;
+        padding: 0;
+        width: calc(50% - 20px);
+    }
+
+    #tbl1 td:nth-child(2) {
+        padding-top: 15px;
+    }
+}
+
+@media all and (min-width: 577px) {
+    #tbl1 input {
+        width: 100px;
+    }
+
+    #tbl1,
+    #tbl1 tr,
+    #tbl1 tr td {
+        margin: 0;
+        padding: 0;
+        border: 0;
+    }
+}
+
+.ntable td:nth-child(1),
+.ntable td:nth-child(2) {
+    width: 90px
+}
